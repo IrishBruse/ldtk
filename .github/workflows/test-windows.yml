@@ -12,7 +12,6 @@ on:
 
 jobs:
   build:
-
     strategy:
       matrix:
         os: [windows-latest]
@@ -61,7 +60,6 @@ jobs:
       # Node/NPM commands
       - uses: actions/setup-node@v1
         with:
-          node-version: '14'
+          node-version: "14"
       - run: cd app && npm install
       - run: cd app && npm run compile
-
